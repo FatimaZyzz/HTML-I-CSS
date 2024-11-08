@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .form-container {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            width: 100px;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        .submit-button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit-button input[type="submit"] {
+            padding: 5px 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .submit-button input[type="submit"]:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Missatge:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="submit-button">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

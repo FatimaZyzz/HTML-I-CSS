@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Layout</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-columns: 2fr 1fr; /* Ajuste de proporciones */
+            height: 100vh;
+        }
+
+        header {
+            grid-column: 1 / span 2;
+            background-color: #1e90ff;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 4em;
+        }
+
+        main {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            background-color: #00ffff;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 4em;
+        }
+
+        aside {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+            background-color: #7fffd4; /* Color ajustado */
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 4em;
+        }
+
+        footer {
+            grid-column: 1 / span 2;
+            background-color: #ffe4b5;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 4em;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>
